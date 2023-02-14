@@ -1,0 +1,90 @@
+.navbar {
+  width: 100%;
+  padding: 12px 0;
+  box-sizing: border-box;
+  z-index: 999;
+}
+.select {
+  padding: 4px;
+  color: var(--text-color);
+  background-color: #111;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: 1px solid rgb(209, 93, 51);
+  border-radius: 5px;
+}
+.navbar ul {
+  padding-left: 16px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar .logo {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.navbar .logo img {
+  margin-right: 5px;
+  filter: invert(100%);
+  width: 30px;
+  margin-top: -8px;
+}
+.pic {
+  margin-right: 8px !important;
+}
+.navbar .hide {
+  display: none;
+}
+.navbar .menu {
+  margin-right: 0px;
+}
+.gmenu-active {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  margin-top: 20px;
+  background-color: #111;
+  z-index: 999;
+}
+.gmenu {
+  display: none;
+}
+.gmenu-content a {
+  color: var(--text-color);
+  margin: 0px 0px 0px 43px;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  padding: 16px 0px 16px 11px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.gmenu-header {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .gmenu-active {
+    margin-top: 63px;
+    position: absolute;
+    background-color: #111;
+    right: 0;
+    left: unset;
+    height: unset;
+    width: 450px;
+  }
+  .gmenu-content  {
+    justify-content: center;
+  }
+}

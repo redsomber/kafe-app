@@ -1,0 +1,10 @@
+.about {
+    padding: 0px 16px;
+    color: var(--text-color);
+}
+.about-submit {
+    padding-bottom: 16px;
+}
+.about-submit input {
+    width: 250px;
+}

@@ -1,0 +1,28 @@
+.cart {
+  position: sticky;
+  display: flex;
+  color: var(--text-color);
+  background-color: rgb(209, 93, 51);
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 50px;
+  align-items:center;
+  justify-content:space-between;
+}
+.cart .count {
+  background-color: #111;
+  margin: 0px 15px;
+  padding: 3px 15px;
+  border-radius: 16px;
+}
+.cart div {
+  display: flex;
+  align-items:center;
+}
+.cart-icon {
+  padding: 0px 15px;
+  color: var(--text-color);
+  width: 36px;
+  height: 36px;
+}

@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { useAuthContext } from "./hooks/useAuthContext";
 import Navbar from "./components/Navbar";
-import Home from "./pages/desktop/home/Home";
+import Home from "./pages/mobile/home/Home";
 import Create from "./pages/mobile/create/Create";
 import Login from "./pages/mobile/login/Login";
 import Signup from "./pages/mobile/signup/Signup";
@@ -12,7 +12,6 @@ import Completed from "./pages/mobile/completed/Completed";
 import Order from "./pages/mobile/order/Order";
 import About from "./pages/mobile/about/About";
 import Contacts from "./pages/mobile/contacts/Contacts";
-import Slider from "./components/Slider";
 
 function App() {
   const { authIsReady, user } = useAuthContext();
@@ -20,10 +19,7 @@ function App() {
     <div className="App">
       {authIsReady && (
         <BrowserRouter>
-          <div className="stick">
-            <Navbar />
-            <Slider />
-          </div>
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/orders/:id" element={<Order />} />

@@ -1,0 +1,7 @@
+.create-form {
+  color: var(--text-color);
+    padding: 0px 20px;
+  }
+  .create-form .select {
+    color: #111
+  }

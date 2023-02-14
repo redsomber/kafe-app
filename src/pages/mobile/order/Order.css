@@ -1,0 +1,50 @@
+.orders {
+    padding: 16px 16px;
+    border-top: 1px solid rgb(45, 45, 47);
+    color:var(--text-color);
+}
+.orders .items {
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid yellowgreen;
+}
+.orders .order-dtes {
+    display: flex;
+}
+.orders img {
+    object-fit: cover;
+    border-radius: 5px;
+    width: 70px;
+    height: 70px;
+    /* float: left; */
+    margin-right: 20px;
+  }
+.delete-window {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.delete-window.active {
+    opacity: 1;
+    pointer-events: all;
+}
+.delete-window .content {
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgb(45, 45, 47);
+    color: var(--text-color);
+    background-color: #111;
+}
+.orders-menu .btn {
+    margin: 5px 10px 5px 0px;
+}
